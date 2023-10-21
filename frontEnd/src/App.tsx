@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Chat from "./Components/Chat/Chat";
+import Login from "./Components/Authentication/Login";
+import Register from "./Components/Authentication/Register";
+import ChatMain from "./Components/Chat/ChatMain";
 import Home from "./Components/home/Home";
 
 const App = () => {
@@ -7,7 +9,9 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/chat" element={<Chat />} />
+        <Route path="/chat" element={<ChatMain />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   );

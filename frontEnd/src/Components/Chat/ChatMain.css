@@ -5,7 +5,7 @@
   }
   
   html {
-    font-size: 62.5%;
+    font-size: 65%;
   }
   
   body {
@@ -133,8 +133,8 @@
     /* overflow-y: scroll; */
     scroll-behavior: smooth;
     width: 100%;
-    max-width: 70rem;
     height: calc(100% - 1.75rem);
+    padding: 0 4rem;
   }
   
   .chat {
@@ -175,7 +175,7 @@
     display: flex;
     align-items: center;
     border-radius: 0.5rem;
-    width: 68rem;
+    width: 80%;
   }
   
   .inp>input {
