@@ -9,10 +9,9 @@
   }
   
   body {
-    background: rgb(0, 25, 40);
+    background: linear-gradient(45deg, rgb(0, 45, 50), rgb(49, 1, 49));
     color: white;
     font-family: 'Poppins', sans-serif;
-  
   }
   
   .App {
