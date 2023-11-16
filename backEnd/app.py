@@ -16,6 +16,8 @@ app.config['MYSQL_PASSWORD'] = ''
 
 mysql = MySQL(app)
 
+# User Authentication
+
 
 @app.route('/login', methods=['POST'])
 def login():
@@ -63,6 +65,17 @@ def register():
 
     response = jsonify({'message': 'Registration successful'})
     return response
+
+# Submit User Message
+
+
+@app.route('/send_msg', methods=['POST'])
+def send_msg():
+    data = request.get_json()
+    user_msg = data.get('typedText')
+    print(user_msg)
+
+    return jsonify({'user_msg': 'message sent', 'response': "We've received your message.Response is processing.."})
 
 
 if __name__ == '__main__':

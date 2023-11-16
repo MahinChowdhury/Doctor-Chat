@@ -8,7 +8,7 @@ import rocket from "/rocket.svg";
 
 const Sidebar = () => {
   return (
-    <div className="sideBar">
+    <div className="sideBar flex flex-col h-screen">
       <div className="upperSide">
         <div className="upperSideTop">
           <img src={gptLogo} alt="Logo" className="logo" />
