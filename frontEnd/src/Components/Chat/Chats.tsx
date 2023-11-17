@@ -8,7 +8,9 @@ const Chats = ({ messages }) => {
       {messages.map((message, index) => (
         <div
           key={index}
-          className={`chat ${message.isBot ? "bot bg-blue-900" : "user ml-96"}`}
+          className={`chat ${
+            message.isBot ? "bot bg-blue-900 font-semibold" : "user ml-96"
+          }`}
         >
           {message.isBot ? (
             <img className="chatimg" src={gptImgLogo} alt="Bot" />

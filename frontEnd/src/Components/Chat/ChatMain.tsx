@@ -32,13 +32,20 @@ const Chat = () => {
       })
       .then((res) => {
         console.log(res);
-        const botResponse = res.data.response;
-        const botMessage = {
-          text: botResponse,
-          isBot: true,
-        };
+        const responseTypes = ["disease", "causes", "treatment"];
 
-        setMessages((prevMessages) => [...prevMessages, botMessage]);
+        responseTypes.forEach((type) => {
+          let botResponse = res.data[type];
+          if (botResponse == "") {
+            return;
+          }
+          let botMessage = {
+            text: botResponse,
+            isBot: true,
+          };
+
+          setMessages((prevMessages) => [...prevMessages, botMessage]);
+        });
       })
       .catch((err) => {
         console.log("Message sent failed : ", err);
@@ -53,7 +60,7 @@ const Chat = () => {
 
       <div className="main md:pl-2 lg:pl-80">
         <Chats messages={messages} />
-        <div className="chatFooter">
+        <div className="chatFooter mt-2">
           <form className="inp text-3xl" onSubmit={handleTextSubmit} action="">
             <input
               name="typedText"
