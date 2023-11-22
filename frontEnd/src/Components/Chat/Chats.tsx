@@ -17,7 +17,7 @@ const Chats = ({ messages }) => {
           ) : (
             <img className="chatimg" src={userIcon} alt="User" />
           )}
-          <p className="text-2xl text-wrap">{message.text}</p>
+          <p className="text-xl text-wrap">{message.text}</p>
         </div>
       ))}
     </div>

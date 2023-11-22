@@ -5,7 +5,7 @@
   }
   
   html {
-    font-size: 65%;
+    font-size: 80%;
   }
   
   body {
@@ -13,6 +13,10 @@
     background: rgb(0,45,50);
     color: white;
     font-family: 'Poppins', sans-serif;
+  }
+
+  .custom-bg{
+    background: rgb(0,45,50);
   }
   
   .App {

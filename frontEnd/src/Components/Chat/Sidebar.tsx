@@ -8,14 +8,14 @@ import rocket from "/rocket.svg";
 
 const Sidebar = () => {
   return (
-    <div className="sideBar flex flex-col h-screen">
+    <div className="sideBar text-md flex flex-col h-screen">
       <div className="upperSide">
         <div className="upperSideTop">
           <img src={gptLogo} alt="Logo" className="logo" />
           <span className="brand">Doctor Health</span>{" "}
         </div>
-        <button className="midBtn">
-          <img src={addBtn} alt="new chat" className="addBtn" />
+        <button className="midBtn text-md text-center">
+          <img src={addBtn} alt="new chat" className="addBtn text-md" />
           New Chat
         </button>
         <div className="upperSideBottom">
