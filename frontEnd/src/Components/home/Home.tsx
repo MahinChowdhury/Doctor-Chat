@@ -12,7 +12,7 @@ const Home = () => {
     >
       <div className="flex items-center">
         <img src={chatgptsvg} className="w-40 cursor-pointer imgSize mt-5" />
-        <ul className="flex items-start justify-center mx-auto text-center text-xl bg-slate-700 p-2 rounded-lg">
+        <ul className="flex items-start justify-center mx-auto text-center text-xl navBar p-2 rounded-lg">
           <li className="list-none inline-block px-5">
             <a href="#" className="no-underline text-white px-2">
               Home
@@ -45,7 +45,7 @@ const Home = () => {
           <p>
             Doctor Health is a chatbot for diseases detection,
             <br />
-            causes indentify and possible treatments are suggusted
+            causes indentifaction and possible treatments are suggustion.
           </p>
 
           <div className="mt-10 text-center">
@@ -67,9 +67,7 @@ const Home = () => {
 
       <div className="container my-28 mx-auto md:px-6">
         <section className="mb-32 text-center">
-          <h2 className="mb-16 text-3xl font-bold">
-            Trusted by <u className="">2,000,000+</u> users
-          </h2>
+          <h2 className="mb-16 text-3xl font-bold">Trusted by 20000+ users</h2>
 
           <div className="grid px-6 md:grid-cols-2 lg:grid-cols-6">
             <div className="mx-auto mb-12 lg:mb-0">

@@ -162,7 +162,10 @@
   .user{
     background: rgb(19, 62, 77);
   }
-  
+
+  .navBar{
+    background: rgb(25, 91, 115);
+  }
   .bot {
     
     width: fit-content;
