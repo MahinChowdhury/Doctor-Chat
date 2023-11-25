@@ -1,13 +1,15 @@
 import "./ChatMain.css";
 import Sidebar from "./Sidebar";
 import Chats from "./Chats";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import sendBtn from "/send.svg";
+import Cookies from "js-cookie";
 
 const Chat = () => {
   const [typedText, setTypeText] = useState("");
   const [messages, setMessages] = useState([]);
+  const [selectedConversation, setSelectedConversation] = useState(1);
 
   const handleTypedText = (e) => {
     setTypeText(e.target.value);
@@ -26,9 +28,13 @@ const Chat = () => {
 
     console.log(messages);
 
+    const userid = Cookies.get("userid");
+
     axios
       .post("http://localhost:5000/send_msg", {
         typedText,
+        userid,
+        selectedConversation,
       })
       .then((res) => {
         console.log(res);
@@ -54,10 +60,43 @@ const Chat = () => {
     setTypeText("");
   };
 
+  const handleSelectConversation = (index) => {
+    setSelectedConversation(index);
+    window.scrollTo(0, document.body.scrollHeight);
+  };
+
+  useEffect(() => {
+    const userid = Cookies.get("userid");
+
+    axios
+      .get("http://localhost:5000/get_messages", {
+        params: {
+          userid: userid,
+          selectedConversation: selectedConversation,
+        },
+      })
+      .then((response) => {
+        console.log(response.data);
+        const fetchedMessages = response.data.messages;
+
+        setMessages(
+          fetchedMessages.map((message) => ({
+            text: message.msg,
+            isBot: message.isBot,
+          }))
+        );
+
+        window.scrollTo(0, document.body.scrollHeight);
+      })
+      .catch((error) => {
+        console.error("Error fetching user messages :", error);
+      });
+  }, [selectedConversation]);
+
+  window.scrollTo(0, document.body.scrollHeight);
   return (
     <div className="App">
-      <Sidebar />
-
+      <Sidebar onSelectedConversation={handleSelectConversation} />
       <div className="main md:pl-2 lg:pl-80">
         <Chats messages={messages} />
         <div className="chatFooter mt-2">

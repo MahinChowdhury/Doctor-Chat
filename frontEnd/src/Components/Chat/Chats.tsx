@@ -3,6 +3,7 @@ import userIcon from "/user-icon.png";
 import gptImgLogo from "/chatgptLogo.svg";
 
 const Chats = ({ messages }) => {
+  window.scrollTo(0, document.body.scrollHeight);
   return (
     <div className="chats">
       {messages.map((message, index) => (

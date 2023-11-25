@@ -36,6 +36,7 @@ const Login = () => {
         } else {
           console.log("Login Successfull : ", res.data);
           Cookies.set("username", res.data[1].username);
+          Cookies.set("userid", res.data[2].userid);
           navigate("/chat");
         }
       })

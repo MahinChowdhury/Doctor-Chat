@@ -92,7 +92,8 @@ def login():
     print(check_password_hash(user[3], password))
 
     if user and check_password_hash(user[3], password):
-        return jsonify({'message': 'Login Successfull'}, {'username': user[1]})
+        print(user)
+        return jsonify({'message': 'Login Successfull'}, {'username': user[1]}, {'userid': user[0]})
     else:
         return jsonify({'message': 'Login Failed'}, 400)
 
@@ -129,24 +130,99 @@ def register():
 @app.route('/send_msg', methods=['POST'])
 def send_msg():
     data = request.get_json()
+    user_id = data.get('userid')
+    conv_idx = data.get('selectedConversation')
     user_msg = data.get('typedText')
     print(user_msg)
 
+    cur = mysql.connection.cursor()
+
+    cur.execute("INSERT INTO conversation (user_id, msg, isbot, conv_index) VALUES (%s, %s, %s, %s)",
+                (user_id, user_msg, 0, conv_idx))
+
+    mysql.connection.commit()
+
     match_idx = generate_response(user_msg, df)
     disease = "Predicted Disease : " + df.iloc[match_idx]['Disease']
+
+    cur.execute("INSERT INTO conversation (user_id, msg, isbot, conv_index) VALUES (%s, %s, %s, %s)",
+                (user_id, disease, 1, conv_idx))
+    mysql.connection.commit()
+
     causes = "Causes of this disease: \n\n" + \
         df.iloc[match_idx]['Causes'] if df.iloc[match_idx]['Causes'] != " " else ""
 
-    treatment = "Suggested treatments : \n\n" + \
-        df.iloc[match_idx]['Treatment']
+    cur.execute("INSERT INTO conversation (user_id, msg, isbot, conv_index) VALUES (%s, %s, %s, %s)",
+                (user_id, causes, 1, conv_idx))
+    mysql.connection.commit()
+
     treatment = "Suggested treatments : \n\n" + \
         df.iloc[match_idx]['Treatment'] if df.iloc[match_idx]['Treatment'] != " " else ""
+
+    cur.execute("INSERT INTO conversation (user_id, msg, isbot, conv_index) VALUES (%s, %s, %s, %s)",
+                (user_id, treatment, 1, conv_idx))
+    mysql.connection.commit()
+
+    cur.close()
 
     print(disease)
     print(causes)
     print(treatment)
 
     return jsonify({'user_msg': 'message sent', 'disease': disease, 'causes': causes, 'treatment': treatment})
+
+
+@app.route('/get_messages', methods=['GET'])
+def get_messages():
+    userid = request.args.get('userid')
+    selected_conversation = request.args.get('selectedConversation')
+
+    cur = mysql.connection.cursor()
+    cur.execute("SELECT * FROM conversation WHERE user_id = %s and conv_index = %s",
+                (userid, selected_conversation))
+    results = cur.fetchall()
+
+    messages = [{'id': row[0], 'userid': row[1], 'msg': row[2],
+                 'isBot': row[3], 'conv_idx': row[4], 'time': row[5]} for row in results]
+
+    cur.close()
+
+    response = jsonify(
+        {'messages': messages, 'message': 'Message Retrieval successful'})
+    return response
+
+
+@app.route('/get_convNumbers', methods=['GET'])
+def get_convNumber():
+    userid = request.args.get('userid')
+
+    cur = mysql.connection.cursor()
+    cur.execute("SELECT conv_no FROM users WHERE id = %s", (userid,))
+    result = cur.fetchone()
+
+    cur.close()
+
+    response = jsonify(
+        {'message': 'Message Retrieval successful', 'conv_no': result[0]})
+    return response
+
+
+@app.route('/update_conv_no', methods=['POST'])
+def update_conv_no():
+    data = request.get_json()
+    userid = data.get('userid')
+    conv_no = data.get('len')
+
+    cur = mysql.connection.cursor()
+    cur.execute("UPDATE users SET conv_no = %s WHERE id = %s",
+                (conv_no, userid))
+    mysql.connection.commit()
+
+    cur.close()
+
+    response = jsonify({'message': 'Conversation number update successful'})
+
+    return response
 
 
 if __name__ == '__main__':
