@@ -112,12 +112,14 @@ def register():
     cursor.execute('SELECT * FROM users WHERE email = %s', (email,))
     existing_user = cursor.fetchone()
 
+    conv_no = 1
+
     if existing_user:
         return jsonify({'message': 'Email already registered'}, 400)
 
     hashed_password = generate_password_hash(password, method='pbkdf2:sha256')
-    cursor.execute('INSERT INTO users (username,email,password) VALUES (%s, %s, %s)',
-                   (username, email, hashed_password))
+    cursor.execute('INSERT INTO users (username,email,password,conv_no) VALUES (%s, %s, %s,%s)',
+                   (username, email, hashed_password, conv_no))
     mysql.connection.commit()
     cursor.close()
 

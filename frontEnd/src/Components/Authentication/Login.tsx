@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
 import loginPageImg from "/loginPageImg3.jpg";
 import axios from "axios";
@@ -111,6 +111,12 @@ const Login = () => {
               {errormsg && (
                 <span className="text-red-600 text-xl">{errormsg}</span>
               )}
+            </div>
+            <div className="text-center">
+              <Link className="text-lg" to="/register">
+                Don't have an account?{" "}
+                <span className="font-semibold">Register</span>
+              </Link>
             </div>
           </form>
         </div>

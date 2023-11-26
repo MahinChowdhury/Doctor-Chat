@@ -2,12 +2,13 @@ import "./ChatMain.css";
 import gptLogo from "/chatgpt.svg";
 import addBtn from "/add-30.png";
 import msgIcon from "/message.svg";
-import home from "/home.svg";
-import saved from "/bookmark.svg";
+import home from "/homebtn.png";
+import logoutbtn from "/logoutbtn.png";
 import rocket from "/rocket.svg";
 import { useEffect, useState } from "react";
 import Cookies from "js-cookie";
 import axios from "axios";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Sidebar = ({ onSelectedConversation }) => {
   const [lists, setLists] = useState([]);
@@ -69,6 +70,14 @@ const Sidebar = ({ onSelectedConversation }) => {
       });
   }, []);
 
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    Cookies.set("username", "");
+    Cookies.set("userid", "");
+    navigate("/login");
+  };
+
   window.scrollTo(0, document.body.scrollHeight);
   return (
     <div className="sideBar text-md flex flex-col h-screen">
@@ -102,15 +111,15 @@ const Sidebar = ({ onSelectedConversation }) => {
           ))}
       </div>
       <div className="lowerSide">
-        <div className="listItems">
+        <div className="listItems cursor-pointer" onClick={() => navigate("/")}>
           <img src={home} alt="Home" className="listItemsImg" />
           Home
         </div>
-        <div className="listItems">
-          <img src={saved} alt="Saved" className="listItemsImg" />
-          Saved
+        <div className="listItems cursor-pointer" onClick={handleLogout}>
+          <img src={logoutbtn} alt="Saved" className="listItemsImg" />
+          Logout
         </div>
-        <div className="listItems">
+        <div className="listItems cursor-pointer">
           <img src={rocket} alt="Rocket" className="listItemsImg" />
           Upgrade to pro
         </div>

@@ -5,11 +5,19 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import sendBtn from "/send.svg";
 import Cookies from "js-cookie";
+import { useNavigate } from "react-router-dom";
 
 const Chat = () => {
   const [typedText, setTypeText] = useState("");
   const [messages, setMessages] = useState([]);
   const [selectedConversation, setSelectedConversation] = useState(1);
+
+  const userid = Cookies.get("userid");
+  const navigate = useNavigate();
+
+  if (!userid) {
+    navigate("/login");
+  }
 
   const handleTypedText = (e) => {
     setTypeText(e.target.value);
@@ -68,6 +76,10 @@ const Chat = () => {
   useEffect(() => {
     const userid = Cookies.get("userid");
 
+    if (!userid) {
+      navigate("/login");
+    }
+
     axios
       .get("http://localhost:5000/get_messages", {
         params: {
@@ -104,7 +116,7 @@ const Chat = () => {
             <input
               name="typedText"
               type="text"
-              placeholder="Send a message"
+              placeholder="Send a message ,  Provide you symptoms in detail for better results..."
               onChange={handleTypedText}
               value={typedText}
             />
