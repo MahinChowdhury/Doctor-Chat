@@ -26,7 +26,7 @@ const Register = () => {
     }
   };
 
-  const handleSubmit = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSubmit: React.FormEventHandler<HTMLFormElement> = (event) => {
     event.preventDefault();
 
     let isValid = true;
@@ -70,7 +70,7 @@ const Register = () => {
 
   return (
     <div className="h-screen p-40 px-72">
-      <div className="loginContainer border-2 border-gray-700 shadow-2xl flex flex-col lg:flex-row justify-stretch items-start">
+      <div className="loginContainer border-2 border-gray-700 shadow-2xl flex flex-col xl:flex-row justify-stretch items-start">
         <div className="imgpart">
           <img src={registerImg} alt="" className="object-cover" />
         </div>

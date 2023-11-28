@@ -16,7 +16,7 @@ app.config['MYSQL_HOST'] = 'localhost'
 # app.config['MYSQL_PORT'] = 3306  # MySQL default port is 3306
 app.config['MYSQL_USER'] = 'root'  # Replace with your MySQL username
 # Replace with your MySQL database name
-app.config['MYSQL_DB'] = 'doctorhealth'
+app.config['MYSQL_DB'] = 'doctorki'
 app.config['MYSQL_PASSWORD'] = ''
 
 mysql = MySQL(app)
@@ -136,6 +136,7 @@ def send_msg():
     conv_idx = data.get('selectedConversation')
     user_msg = data.get('typedText')
     print(user_msg)
+    print(conv_idx)
 
     cur = mysql.connection.cursor()
 
@@ -185,7 +186,7 @@ def get_messages():
     results = cur.fetchall()
 
     messages = [{'id': row[0], 'userid': row[1], 'msg': row[2],
-                 'isBot': row[3], 'conv_idx': row[4], 'time': row[5]} for row in results]
+                 'isBot': row[3], 'conv_idx': row[4]} for row in results]
 
     cur.close()
 
@@ -194,35 +195,72 @@ def get_messages():
     return response
 
 
-@app.route('/get_convNumbers', methods=['GET'])
-def get_convNumber():
+@app.route('/get_convlist', methods=['GET'])
+def get_convlist():
     userid = request.args.get('userid')
 
     cur = mysql.connection.cursor()
-    cur.execute("SELECT conv_no FROM users WHERE id = %s", (userid,))
-    result = cur.fetchone()
+    cur.execute("SELECT * FROM convolist WHERE user_id = %s", (userid,))
+    result = cur.fetchall()
 
     cur.close()
 
     response = jsonify(
-        {'message': 'Message Retrieval successful', 'conv_no': result[0]})
+        {'message': 'Convolist Retrieval successful', 'convolists': result})
     return response
 
 
-@app.route('/update_conv_no', methods=['POST'])
-def update_conv_no():
+@app.route('/add_convolist', methods=['POST'])
+def add_conv_list():
     data = request.get_json()
     userid = data.get('userid')
-    conv_no = data.get('len')
+    conv_name = "New Conversation"
 
     cur = mysql.connection.cursor()
-    cur.execute("UPDATE users SET conv_no = %s WHERE id = %s",
-                (conv_no, userid))
+    cur.execute("INSERT INTO convolist (title,user_id) values (%s,%s)",
+                (conv_name, userid))
+
     mysql.connection.commit()
 
     cur.close()
 
-    response = jsonify({'message': 'Conversation number update successful'})
+    response = jsonify({'message': 'Conversation added successful'})
+
+    return response
+
+
+@app.route('/delete_convolist', methods=['POST'])
+def delete_conv_list():
+    data = request.get_json()
+    index = data.get('index')
+
+    cur = mysql.connection.cursor()
+    cur.execute("DELETE from convolist WHERE id = %s", (index,))
+
+    mysql.connection.commit()
+
+    cur.close()
+
+    response = jsonify({'message': 'Deleted convolist successful'})
+
+    return response
+
+
+@app.route('/edit_convolist', methods=['POST'])
+def edit_conv_list():
+    data = request.get_json()
+    index = data.get('index')
+    newName = data.get('newName')
+
+    cur = mysql.connection.cursor()
+    cur.execute("UPDATE convolist SET title = %s WHERE id = %s",
+                (newName, index))
+
+    mysql.connection.commit()
+
+    cur.close()
+
+    response = jsonify({'message': 'Deleted convolist successful'})
 
     return response
 

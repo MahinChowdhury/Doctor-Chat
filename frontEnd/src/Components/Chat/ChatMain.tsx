@@ -9,7 +9,10 @@ import { useNavigate } from "react-router-dom";
 
 const Chat = () => {
   const [typedText, setTypeText] = useState("");
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState<{ text: string; isBot: boolean }[]>(
+    []
+  );
+
   const [selectedConversation, setSelectedConversation] = useState(1);
 
   const userid = Cookies.get("userid");
@@ -19,10 +22,11 @@ const Chat = () => {
     navigate("/login");
   }
 
-  const handleTypedText = (e) => {
+  const handleTypedText = (e: React.ChangeEvent<HTMLInputElement>) => {
     setTypeText(e.target.value);
   };
-  const handleTextSubmit = (e) => {
+
+  const handleTextSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
 
     console.log(typedText);
@@ -68,7 +72,7 @@ const Chat = () => {
     setTypeText("");
   };
 
-  const handleSelectConversation = (index) => {
+  const handleSelectConversation = (index: number) => {
     setSelectedConversation(index);
     window.scrollTo(0, document.body.scrollHeight);
   };
@@ -92,7 +96,7 @@ const Chat = () => {
         const fetchedMessages = response.data.messages;
 
         setMessages(
-          fetchedMessages.map((message) => ({
+          fetchedMessages.map((message: { msg: string; isBot: boolean }) => ({
             text: message.msg,
             isBot: message.isBot,
           }))
@@ -116,7 +120,7 @@ const Chat = () => {
             <input
               name="typedText"
               type="text"
-              placeholder="Send a message ,  Provide you symptoms in detail for better results..."
+              placeholder="Send a message"
               onChange={handleTypedText}
               value={typedText}
             />
