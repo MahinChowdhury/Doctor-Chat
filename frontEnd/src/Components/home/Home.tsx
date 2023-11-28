@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
 import chatgptsvg from "/chatgpt.svg";
 import convoImg from "/convo.png";
 
@@ -12,28 +13,7 @@ const Home = () => {
     >
       <div className="flex items-center">
         <img src={chatgptsvg} className="w-40 cursor-pointer imgSize mt-10" />
-        <ul className="flex items-start justify-center mx-auto text-center text-xl navBar p-2 rounded-lg">
-          <li className="list-none inline-block px-5">
-            <a href="#" className="no-underline text-white px-2">
-              Home
-            </a>
-          </li>
-          <li className="list-none inline-block px-5">
-            <a href="#" className="no-underline text-white px-2">
-              Chat
-            </a>
-          </li>
-          <li className="list-none inline-block px-5">
-            <a href="#" className="no-underline text-white px-2">
-              About
-            </a>
-          </li>
-          <li className="list-none inline-block px-5">
-            <a href="#" className="no-underline text-white px-2">
-              Contact
-            </a>
-          </li>
-        </ul>
+        <Navbar />
       </div>
 
       <div className="flex flex-col lg:flex-row justify-center items-center">
