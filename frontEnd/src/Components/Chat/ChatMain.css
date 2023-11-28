@@ -5,7 +5,7 @@
   }
   
   html {
-    font-size: 65%;
+    font-size: 80%;
   }
   
   body {
@@ -13,6 +13,10 @@
     background: rgb(0,45,50);
     color: white;
     font-family: 'Poppins', sans-serif;
+  }
+
+  .custom-bg{
+    background: rgb(0,45,50);
   }
   
   .App {
@@ -27,7 +31,7 @@
     top : 0;
     left :0;
     border-right: 1px solid rgb(1, 100, 100);
-    /* height: 100%; */
+    height: 100%;
   }
   
   .main {
@@ -47,7 +51,11 @@
     padding: 2rem;
     border-bottom: 1px solid rgb(100, 100, 100);
     height: 70%;
-  
+    overflow-y: auto;
+  }
+
+  .upperSide::-webkit-scrollbar {
+    width: 0px; /* Set the width of the scrollbar */
   }
   
   .upperSideTop {
@@ -158,7 +166,10 @@
   .user{
     background: rgb(19, 62, 77);
   }
-  
+
+  .navBar{
+    background: rgb(25, 91, 115);
+  }
   .bot {
     
     width: fit-content;

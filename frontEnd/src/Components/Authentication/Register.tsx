@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Login.css";
-import registerImg from "/registerPageImg8.jpg";
+import registerImg from "/register24.jpg";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -71,7 +71,7 @@ const Register = () => {
   return (
     <div className="h-screen p-40 px-72">
       <div className="loginContainer border-2 border-gray-700 shadow-2xl flex flex-col lg:flex-row justify-stretch items-start">
-        <div className="imgpart ">
+        <div className="imgpart">
           <img src={registerImg} alt="" className="object-cover" />
         </div>
         <div className="formpart md:w-8/12">

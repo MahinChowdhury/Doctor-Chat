@@ -1,8 +1,10 @@
 import "./ChatMain.css";
 import userIcon from "/user-icon.png";
 import gptImgLogo from "/chatgptLogo.svg";
+import gojoIcon from "/gojodp.jpg";
 
 const Chats = ({ messages }) => {
+  window.scrollTo(0, document.body.scrollHeight);
   return (
     <div className="chats">
       {messages.map((message, index) => (
@@ -15,9 +17,9 @@ const Chats = ({ messages }) => {
           {message.isBot ? (
             <img className="chatimg" src={gptImgLogo} alt="Bot" />
           ) : (
-            <img className="chatimg" src={userIcon} alt="User" />
+            <img className="chatimg" src={gojoIcon} alt="User" />
           )}
-          <p className="text-2xl text-wrap">{message.text}</p>
+          <p className="text-xl text-wrap">{message.text}</p>
         </div>
       ))}
     </div>
