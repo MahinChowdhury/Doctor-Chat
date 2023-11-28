@@ -21,7 +21,7 @@ const Login = () => {
     }
   };
 
-  const handleSubmit = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSubmit: React.FormEventHandler<HTMLFormElement> = (event) => {
     event.preventDefault();
 
     axios
@@ -47,7 +47,7 @@ const Login = () => {
 
   return (
     <div className="h-screen p-40 px-72">
-      <div className="loginContainer border-2 border-gray-700 shadow-2xl flex flex-col md:flex-row justify-stretch items-start">
+      <div className="loginContainer border-2 border-gray-700 shadow-2xl flex flex-col xl:flex-row justify-stretch items-start">
         <div className="imgpart ">
           <img src={loginPageImg} alt="" className="object-cover" />
         </div>

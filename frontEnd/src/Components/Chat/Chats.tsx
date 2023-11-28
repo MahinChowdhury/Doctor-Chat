@@ -1,12 +1,17 @@
 import "./ChatMain.css";
-import userIcon from "/user-icon.png";
+// import userIcon from "/user-icon.png";
 import gptImgLogo from "/chatgptLogo.svg";
 import gojoIcon from "/gojodp.jpg";
 
-const Chats = ({ messages }) => {
-  window.scrollTo(0, document.body.scrollHeight);
+const Chats: React.FC<{ messages: { text: string; isBot: boolean }[] }> = ({
+  messages,
+}) => {
   return (
     <div className="chats">
+      <div className="text-lg text-slate-300 text-center text-shadow-2xl font-semibold">
+        Please, Provide your symptoms in detail for better results!
+      </div>
+      <hr />
       {messages.map((message, index) => (
         <div
           key={index}
