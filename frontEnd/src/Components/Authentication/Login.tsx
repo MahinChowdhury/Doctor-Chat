@@ -4,6 +4,7 @@ import "./Login.css";
 import loginPageImg from "/loginPageImg3.jpg";
 import axios from "axios";
 import Cookies from "js-cookie";
+import Navbar from "../Navbar/Navbar";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -46,79 +47,82 @@ const Login = () => {
   };
 
   return (
-    <div className="h-screen p-40 px-72">
-      <div className="loginContainer border-2 border-gray-700 shadow-2xl flex flex-col xl:flex-row justify-stretch items-start">
-        <div className="imgpart ">
-          <img src={loginPageImg} alt="" className="object-cover" />
-        </div>
-        <div className="formpart md:w-8/12">
-          <form className="form" action="" onSubmit={handleSubmit}>
-            <div className="control">
-              <h1 className="text-2xl mb-12">Sign In</h1>
-            </div>
-            <div className="control block-cube block-input">
-              <input
-                name="email"
-                placeholder="Email"
-                type="text"
-                value={email}
-                onChange={handleInput}
-              />
-              <div className="bg-top">
-                <div className="bg-inner"></div>
+    <div className="flex flex-col mt-4">
+      <Navbar />
+      <div className="h-screen p-40 px-72">
+        <div className="loginContainer border-2 border-gray-700 shadow-2xl flex flex-col xl:flex-row justify-stretch items-start">
+          <div className="imgpart ">
+            <img src={loginPageImg} alt="" className="object-cover" />
+          </div>
+          <div className="formpart md:w-8/12">
+            <form className="form" action="" onSubmit={handleSubmit}>
+              <div className="control">
+                <h1 className="text-2xl mb-12">Sign In</h1>
               </div>
-              <div className="bg-right">
-                <div className="bg-inner"></div>
+              <div className="control block-cube block-input">
+                <input
+                  name="email"
+                  placeholder="Email"
+                  type="text"
+                  value={email}
+                  onChange={handleInput}
+                />
+                <div className="bg-top">
+                  <div className="bg-inner"></div>
+                </div>
+                <div className="bg-right">
+                  <div className="bg-inner"></div>
+                </div>
+                <div className="bg">
+                  <div className="bg-inner"></div>
+                </div>
               </div>
-              <div className="bg">
-                <div className="bg-inner"></div>
+              <div className="control block-cube block-input">
+                <input
+                  name="password"
+                  placeholder="Password"
+                  type="password"
+                  value={password}
+                  onChange={handleInput}
+                />
+                <div className="bg-top">
+                  <div className="bg-inner"></div>
+                </div>
+                <div className="bg-right">
+                  <div className="bg-inner"></div>
+                </div>
+                <div className="bg">
+                  <div className="bg-inner"></div>
+                </div>
               </div>
-            </div>
-            <div className="control block-cube block-input">
-              <input
-                name="password"
-                placeholder="Password"
-                type="password"
-                value={password}
-                onChange={handleInput}
-              />
-              <div className="bg-top">
-                <div className="bg-inner"></div>
+              <button
+                className="btn block-cube block-cube-hover mb-6"
+                type="submit"
+              >
+                <div className="bg-top">
+                  <div className="bg-inner"></div>
+                </div>
+                <div className="bg-right">
+                  <div className="bg-inner"></div>
+                </div>
+                <div className="bg">
+                  <div className="bg-inner"></div>
+                </div>
+                <div className="text">Log In</div>
+              </button>
+              <div>
+                {errormsg && (
+                  <span className="text-red-600 text-xl">{errormsg}</span>
+                )}
               </div>
-              <div className="bg-right">
-                <div className="bg-inner"></div>
+              <div className="text-center">
+                <Link className="text-lg" to="/register">
+                  Don't have an account?{" "}
+                  <span className="font-semibold">Register</span>
+                </Link>
               </div>
-              <div className="bg">
-                <div className="bg-inner"></div>
-              </div>
-            </div>
-            <button
-              className="btn block-cube block-cube-hover mb-6"
-              type="submit"
-            >
-              <div className="bg-top">
-                <div className="bg-inner"></div>
-              </div>
-              <div className="bg-right">
-                <div className="bg-inner"></div>
-              </div>
-              <div className="bg">
-                <div className="bg-inner"></div>
-              </div>
-              <div className="text">Log In</div>
-            </button>
-            <div>
-              {errormsg && (
-                <span className="text-red-600 text-xl">{errormsg}</span>
-              )}
-            </div>
-            <div className="text-center">
-              <Link className="text-lg" to="/register">
-                Don't have an account?{" "}
-                <span className="font-semibold">Register</span>
-              </Link>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </div>
