@@ -116,7 +116,7 @@ const Chat = () => {
       <div className="main md:pl-2 lg:pl-80">
         <Chats messages={messages} />
         <div className="chatFooter mt-2">
-          <form className="inp text-xl" onSubmit={handleTextSubmit} action="">
+          <form className="inp text-2xl" onSubmit={handleTextSubmit} action="">
             <input
               name="typedText"
               type="text"

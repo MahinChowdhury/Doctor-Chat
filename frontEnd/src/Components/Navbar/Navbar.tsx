@@ -1,5 +1,3 @@
-import React from "react";
-
 const Navbar = () => {
   return (
     <ul className="flex items-start justify-center mx-auto text-center text-xl navBar p-2 rounded-lg">
