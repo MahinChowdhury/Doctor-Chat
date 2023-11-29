@@ -5,13 +5,14 @@
   }
   
   html {
-    font-size: 80%;
+    font-size: 70%;
   }
   
   body {
     /* background: linear-gradient(45deg, rgb(0, 45, 50), rgb(49, 1, 49)); */
-    background: rgb(0,45,50);
-    color: white;
+    /* background: rgb(3, 26, 29); */
+    /* background: rgb(0,45,50); */
+    /* color: white; */
     font-family: 'Poppins', sans-serif;
   }
 
@@ -70,7 +71,7 @@
   }
   
   .midBtn {
-    background: #584BFF;
+    /* background: #584BFF; */
     border: none;
     color: white;
     padding: 1.5rem;
@@ -88,7 +89,7 @@
     display: flex;
     justify-content: space-between;
     background: transparent;
-    color: rgba(222, 222, 222, 1);
+    /* color: rgba(222, 222, 222, 1); */
     align-items: center;
   
     padding: 1.5rem;
@@ -162,10 +163,6 @@
     width: 3.5rem;
     margin-right: 2rem;
     border-radius: 0.5rem;
-  }
-
-  .user{
-    background: rgb(19, 62, 77);
   }
 
   .navBar{

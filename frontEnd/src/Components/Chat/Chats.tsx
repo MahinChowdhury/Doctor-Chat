@@ -8,7 +8,7 @@ const Chats: React.FC<{ messages: { text: string; isBot: boolean }[] }> = ({
 }) => {
   return (
     <div className="chats">
-      <div className="text-lg text-slate-300 text-center text-shadow-2xl font-semibold">
+      <div className="text-blue-600 text-xl text-center text-shadow-2xl font-semibold">
         Please, Provide your symptoms in detail for better results!
       </div>
       <hr />
@@ -16,7 +16,9 @@ const Chats: React.FC<{ messages: { text: string; isBot: boolean }[] }> = ({
         <div
           key={index}
           className={`chat ${
-            message.isBot ? "bot bg-blue-900 font-semibold" : "user ml-96"
+            message.isBot
+              ? "bot bg-blue-300 dark:bg-blue-900 font-bold"
+              : "bg-user-light dark:bg-user-dark ml-96"
           }`}
         >
           {message.isBot ? (
@@ -24,7 +26,7 @@ const Chats: React.FC<{ messages: { text: string; isBot: boolean }[] }> = ({
           ) : (
             <img className="chatimg" src={gojoIcon} alt="User" />
           )}
-          <p className="text-xl text-wrap">{message.text}</p>
+          <p className="text-2xl text-wrap">{message.text}</p>
         </div>
       ))}
     </div>

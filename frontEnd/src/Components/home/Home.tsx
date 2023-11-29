@@ -30,7 +30,7 @@ const Home = () => {
 
           <div className="mt-10 text-center">
             <button
-              onClick={() => navigate("chat")}
+              onClick={() => navigate("/chat")}
               className="bg-blue-600 rounded-3xl py-3 px-8 font-medium 
                 inline-block mr-4 hover:bg-transparent hover:border-blue-400 hover:text-white duration-300 hover:border border border-transparent"
             >

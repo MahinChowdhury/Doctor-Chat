@@ -4,7 +4,7 @@ import addBtn from "/add-30.png";
 import msgIcon from "/message.svg";
 import home from "/homebtn.png";
 import logoutbtn from "/logoutbtn.png";
-import rocket from "/rocket.svg";
+import rocket from "/space-shuttle-24.png";
 import { useEffect, useState } from "react";
 import Cookies from "js-cookie";
 import axios from "axios";
@@ -161,7 +161,10 @@ const Sidebar: React.FC<{
           <img src={gptLogo} alt="Logo" className="logo" />
           <span className="brand">Doctor Health</span>{" "}
         </div>
-        <button className="midBtn text-md text-center" onClick={handleNewClick}>
+        <button
+          className="midBtn bg-blue-600 text-md text-center"
+          onClick={handleNewClick}
+        >
           <img src={addBtn} alt="new chat" className="addBtn text-md" />
           New Chat
         </button>
