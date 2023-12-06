@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./Components/Authentication/Login";
 import Register from "./Components/Authentication/Register";
-import ChatMain from "./Components/Chat/ChatMain";
 import Home from "./Components/home/Home";
 import darkbtn from "/dark-30.png";
 import lightbtn from "/light-30.png";
 import Cookies from "js-cookie";
+import ChatContainer from "./Components/Chat/ChatMain";
 
 const App = () => {
   const savedTheme = Cookies.get("theme") || "dark";
@@ -44,7 +44,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/chat" element={<ChatMain />} />
+          <Route path="/chat" element={<ChatContainer />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>

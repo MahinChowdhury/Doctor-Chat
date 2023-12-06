@@ -18,7 +18,7 @@ const Home = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row justify-center items-center">
-        <div className="flex-none text-white px-4 mt-10 max-w-xl text-center mx-48">
+        <div className="flex-none text-black dark:text-white px-4 mt-10 max-w-xl text-center mx-48">
           <h1 className="text-6xl font-semibold leading-normal mb-4">
             AI Chat that feels surprisingly{" "}
             <span className="font-light">human</span>

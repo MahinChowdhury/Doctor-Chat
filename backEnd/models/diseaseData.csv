@@ -1,4 +1,60 @@
 Symptoms,Disease,Causes,Treatment
+"rusting of skin bumps
+Cysts
+Papules (small red bumps)
+Pustules (small red bumps containing white or yellow pus)
+Redness around the skin eruptions
+Scarring of the skin
+Whiteheads
+Blackheads",Acne,"Acne is most common in teenagers, but anyone can get acne, even babies. The problem tends to run in families.
+
+Some things that may trigger acne include:
+
+Hormonal changes that make the skin oilier. These may be related to puberty, menstrual periods, pregnancy, birth control pills, or stress.
+Greasy or oily cosmetic and hair products.
+Certain drugs (such as steroids, testosterone, estrogen, and phenytoin). Birth control devices, such as some drug-containing IUDs, can make acne worse.
+Heavy sweating and humidity.
+Excessively touching, resting on, or rubbing the skin.","Do not wash affected areas of skin more than twice a day. Frequent washing can irritate the skin and make symptoms worse.
+Wash the affected area with a mild soap or cleanser and lukewarm water. Very hot or cold water can make acne worse.
+Do not try to ""clean out"" blackheads or squeeze spots. This can make them worse and cause permanent scarring.
+Avoid make-up, skincare and suncare products that are oil-based (sometimes labelled “comedogenic”). Use water-based non-comedogenic products, as they’re less likely to block the pores in your skin.
+Completely remove make-up before going to bed.
+If dry skin is a problem, use a fragrance-free water-based emollient.
+Regular exercise cannot improve your acne, but it can boost your mood and improve your self-esteem. Shower as soon as possible once you finish exercising as sweat can irritate your acne.
+Wash your hair regularly and try to avoid letting your hair fall across your face."
+"feeling sick 
+vomiting
+indigestion
+a high temperature of 38C
+more fever
+yellowing of the whites of the eyes
+yellowing of the skin
+tenderness or swelling of the tummy
+fast heartbeat 
+tachycardia
+rapid breathing",Acute pancreatitis,"Acute pancreatitis is usually caused by gallstones or drinking too much alcohol
+You're probably more likely to develop severe pancreatitis if you:
+
+are over 70
+are obese (you have a body mass index (BMI) of 30 or above)
+have 2 or more alcoholic drinks a day
+smoke
+have a family history of pancreatitis
+Less common causes of acute pancreatitis include:
+
+high blood fat levels (hypertriglyceridaemia)
+accidental damage or injury to the pancreas – for example, during a procedure to remove gallstones or examine the pancreas
+a side effect of medicine
+viruses like mumps or measles
+high blood calcium levels (hypercalcaemia)
+the immune system attacking the pancreas (autoimmune pancreatitis)","Acute pancreatitis is treated in hospital,
+ where you'll be closely monitored for signs of serious problems and given supportive treatment,
+ such as fluids and oxygen.
+Fluids
+Oxygen
+Painkillers
+Antibiotics
+Nutritional support"
 "a runny nose or sneezing
 pain or tenderness around your cheeks, eyes or forehead
 coughing, wheezing or breathlessness
@@ -14,9 +70,57 @@ certain medicines","trying to avoid the thing you're allergic to whenever possib
 medicines for mild allergic reactions like antihistamines, steroid tablets and steroid creams
 emergency medicines called adrenaline auto-injectors, such as an EpiPen, for severe allergic reactions
 desensitisation (immunotherapy) for severe allergic reactions – this involves carefully exposing you to the thing you're allergic to over time, so your body gradually gets used to it and does not react so badly (this should only be done by a medical professional)"
+"Fatigue, weakness, pale skin",Anemia,"Iron deficiency, vitamin B12 deficiency","Iron supplements, blood transfusions"
+"finding it hard to concentrate
+not sleeping, or waking in the night with bad dreams
+not eating properly
+quickly getting angry or irritable, and being out of control during outbursts
+constantly worrying or having negative thoughts
+feeling tense and fidgety, or using the toilet often
+always crying
+being clingy
+complaining of tummy aches and feeling unwell",Anxiety disorders,"Some children develop anxiety after stressful events, such as:
+
+frequently moving house or school
+parents fighting or arguing
+the death of a close relative or friend
+becoming seriously ill or getting injured in an accident
+school-related issues like exams or bullying
+being abused or neglected","Counselling can help your child understand what's making them anxious and allow them to work through the situation.
+
+Cognitive behavioural therapy (CBT) is a talking therapy that can help your child manage their anxiety by changing the way they think and behave.
+
+Anxiety medicines may be offered to your child if their anxiety is severe or does not get better with talking therapies. They're usually only prescribed by doctors who specialise in children and young people's mental health."
+"joint pain, tenderness and stiffness
+inflammation in and around the joints
+restricted movement of the joints
+warm red skin over the affected joint
+weakness and muscle wasting",Arthritis, ,"Osteoarthritis treatments include lifestyle changes, medicines and surgery.
+
+Treatment for rheumatoid arthritis aims to slow the condition's progress and minimise joint inflammation. This helps prevent joint damage.
+
+Treatments include medicine, physiotherapy and surgery."
 "a whistling sound when breathing (wheezing) breathlessness
 a tight chest, which may feel like a band is tightening around it
 coughing",Asthma,"Asthma is caused by swelling (inflammation) of the breathing tubes that carry air in and out of the lungs. This makes the tubes highly sensitive, so they temporarily narrow.","Asthma is usually treated by using an inhaler, a small device that lets you breathe in medicines."
+"chest pain
+pain in your arms and legs, especially when exercising
+feeling short of breath
+feeling tired all the time
+feeling weak
+feeling confused",Atherosclerosis,"being over 65 years of age
+smoking
+having high cholesterol
+having high blood pressure
+having close relatives who have cardiovascular disease","There are currently no treatments to reverse atherosclerosis, but you may be offered medicines to lower your risk of having a heart attack or a stroke.
+
+You may need medicines to:
+
+lower your cholesterol (statins)
+lower your blood pressure
+lower your risk of blood clots
+lower your blood sugar levels if you have diabetes
+You may also need surgery to help improve blood flow through the affected arteries."
 "a very high temperature or feeling hot or shivery
 aching muscles
 headache
@@ -145,6 +249,80 @@ taking regular exercise
 not smoking
 chemotherapy – powerful cancer-killing medicines
 radiotherapy – the controlled use of high-energy X-rays"
+"a chesty cough – you may cough up green or yellow mucus
+wheezing and shortness of breath
+chest pain or discomfort
+a high temperature
+a headache
+aching muscles
+tiredness",Chest infection,"A chest infection will either be caused by:
+
+a virus (like viral bronchitis) – this usually clears up by itself after a few weeks and antibiotics will not help
+bacteria (like pneumonia) – a GP may prescribe antibiotics (make sure you complete the whole course as advised by the GP, even if you start to feel better)","Antibiotics are only used to treat bacterial chest infections. They're not used for treating viral chest infections, like flu or viral bronchitis. This is because antibiotics do not work for viral infections.
+
+You may need a blood test or a sample of your mucus may need to be tested to see what's causing your chest infection."
+"a persistent or recurring watery, often smelly, discharge from the ear, which can come and go or may be continuous
+a gradual loss of hearing in the affected ear",Cholesteatoma,"A cholesteatoma can develop if part of the eardrum collapses.
+
+Dead skin cells are normally passed out of the ear, but if the eardrum collapses, it may create a pocket where the dead skin cells can collect.
+
+You can get a cholesteatoma if the eardrum is damaged through an injury or infection, or after any kind of ear surgery.","To remove a cholesteatoma, you usually need to have surgery under general anaesthetic."
+"weight loss and poor appetite
+swollen ankles, feet or hands – as a result of water retention (oedema)
+shortness of breath
+tiredness
+blood in your pee (urine)
+an increased need to pee – particularly at night
+difficulty sleeping (insomnia)
+itchy skin
+muscle cramps
+feeling sick
+headaches
+erectile dysfunction in men",Chronic Kidney Disease(CKD),"high blood pressure
+diabetes
+high cholesterol
+kidney infections
+glomerulonephritis – kidney inflammation
+autosomal dominant polycystic kidney disease
+blockages in the flow of urine 
+long-term, regular use of certain medicines ","The main treatments are:
+
+lifestyle changes to help you remain as healthy as possible
+medicine to control associated problems such as high blood pressure and high cholesterol
+dialysis – treatment to replicate some of the kidney's functions; this may be necessary in advanced CKD
+kidney transplant – this may also be necessary in advanced CKD"
+"a high temperature or shivering
+a new, continuous cough – this means coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours
+a loss or change to your sense of smell or taste
+shortness of breath
+feeling tired or exhausted
+an aching body
+a headache
+a sore throat
+a blocked or runny nose
+loss of appetite
+diarrhoea
+feeling sick or being sick",COVID-19,"COVID-19 spreads very easily through close contact with people who have the virus.
+
+When someone with COVID-19 breathes, speaks, coughs or sneezes, they release small droplets containing the virus. You can catch it by breathing in these droplets or touching surfaces covered in them.
+You can still catch or spread COVID-19 if you:
+
+do not have symptoms
+are fully vaccinated
+have had the virus before","Nirmatrelvir plus ritonavir, remdesivir and molnupiravir are antiviral medicines.
+
+When being assessed for treatment, a doctor will advise which treatment is most suitable for you."
+"a high temperature
+a severe headache
+pain behind your eyes
+muscle and joint pain
+feeling or being sick
+swollen glands
+a blotchy rash made up of flat or slightly raised spots – this can affect large areas of your body",Dengue,You can get dengue if you're bitten by an infected mosquito. The mosquitoes that carry the dengue virus bite during the day.,"There is no treatment for dengue, but you can help ease your symptoms by:
+
+resting
+drinking plenty of fluids
+taking paracetamol to help bring down your temperature and ease any pain"
 "continuous low mood or sadness
 feeling hopeless and helpless
 having low self-esteem
@@ -198,6 +376,57 @@ A balanced diet is important for people with Type 1 diabetes. Meeting with a reg
 Regular physical activity is beneficial for managing blood sugar levels.
 Stress, illness, and changes in routine can affect blood sugar levels.
 Insulin Therapy"
+"Dry skin.
+Itchy skin.
+Skin rash.
+Bumps on your skin.
+Thick, leathery patches of skin.
+Flaky, scaly or crusty skin.
+Swelling.",Eczema,"Experts aren’t sure what exactly causes eczema. Things that may make it more likely include:
+
+An immune system response to something irritating
+Problems in your skin’s barrier that let moisture out and germs in
+A family history of other allergies or asthma","There is currently no cure for AD. However, treatments aim to heal the affected skin and prevent symptom flare-ups."
+"increased sensitivity to pain
+muscle stiffness
+difficulty getting to sleep or staying asleep, which can make you feel very tired (fatigue)
+problems with mental processes (known as ""fibro-fog""), such as difficulty concentrating or remembering things
+headaches
+irritable bowel syndrome (IBS), a digestive condition that causes stomach pain and bloating
+feelings of frustration, worry or low mood",Fibromyalgia," The exact cause of fibromyalgia is unknown, but it's thought to be related to abnormal levels of certain chemicals in the brain and changes in the way the central nervous system (the brain, spinal cord and nerves) processes pain messages carried around the body.
+
+It's also suggested that some people are more likely to develop fibromyalgia because of genes inherited from their parents.
+
+In many cases, the condition appears to be triggered by things that are physical or emotional like an injury, an infection or stress.","Although there's currently no cure for fibromyalgia, there are treatments to help relieve some of the symptoms and make the condition easier to live with."
+"tummy pain
+indigestion
+feeling full and bloated
+feeling sick (nausea)
+being sick (vomiting)
+not feeling as hungry as usual
+burping and farting",Gastritis,"Causes of gastritis include:
+
+infection with a bacteria called helicobacter pylori (H. pylori)
+taking anti-inflammatory painkillers (such as ibuprofen) and aspirin
+drinking too much alcohol
+being very stressed and unwell, such as after surgery","Treatment for gastritis depends on what's causing it.
+
+You might need:
+
+antibiotics
+medicines to control stomach acid and stop it from rising into your food pipe (oesophagus), such as antacids, proton pump inhibitors or alginates
+to talk to your doctor about stopping anti-inflammatory painkillers (such as ibuprofen) or aspirin and trying a different medicine, if possible
+to stop drinking alcohol, if gastritis is caused by alcohol"
+"bleeding that does not stop.
+nosebleeds that take a long time to stop
+bleeding from wounds that lasts a long time
+bleeding gums
+skin that bruises easily
+pain and stiffness around joints, such as elbows, because of bleeding inside the body (internal bleeding)",Haemophilia,"Hemophilia is typically an inherited disorder, which means that a person is born with the condition. The CDCTrusted Source states that hemophilia is a sex-linked recessive condition.","There's no cure for haemophilia, but treatment usually allows a person with the condition to enjoy a good quality of life.
+
+Man-made clotting factors are given as medicines to prevent and treat prolonged bleeding. These medicines are given as an injection. 
+
+In milder cases, injections are usually only given in response to prolonged bleeding. More severe cases are treated with regular injections to prevent bleeding."
 "a high temperature
 difficulty breathing – babies may make grunting noises
 being sleepier than normal or difficult to wake
@@ -217,6 +446,29 @@ You may be given oxygen and other medicines such as steroids, depending on your 
 If you have a Hib infection, your close contacts, such as anyone you live with, may be offered antibiotics to stop them getting ill.
 
 "
+"chest pain – a feeling of pressure, heaviness, tightness or squeezing across your chest
+pain in other parts of the body – it can feel as if the pain is spreading from your chest to your arms (usually the left arm, but it can affect both arms), jaw, neck, back and tummy
+feeling lightheaded or dizzy
+sweating
+shortness of breath
+feeling sick (nausea) or being sick (vomiting)
+an overwhelming feeling of anxiety (similar to a panic attack)
+coughing or wheezing",Heart attack,"Coronary heart disease (CHD) is the leading cause of heart attacks.
+
+CHD is a condition in which the major blood vessels (coronary arteries) that supply the heart muscle become clogged by a build-up of deposits of fatty substances, known as plaques.
+
+Before a heart attack, 1 of the plaques bursts (ruptures), causing a blood clot to develop at the site of the rupture.
+
+The clot may block the supply of blood to the heart, triggering a heart attack.","While waiting for an ambulance, it may help to chew and then swallow a tablet of aspirin (ideally 300mg), as long as the person having a heart attack is not allergic to aspirin.
+
+Aspirin helps to thin the blood and improves blood flow to the heart.
+
+In hospital, treatment for a heart attack depends on the type of heart attack, and how serious it is.
+
+The 2 main treatments are:
+
+using medicines to dissolve blood clots
+surgery to help restore blood to the heart"
 "blood pressure is high
 Severe headaches
 headaches in back of the head
@@ -242,6 +494,21 @@ stop smoking – get help quitting
 
 if you're under 55 years of age, or you're any age and have type 2 diabetes – you'll usually be offered an ACE inhibitor or an angiotensin-2 receptor blocker (ARB)
 if you're aged 55 or older, or you're any age and of African or Caribbean origin, and you do not have type 2 diabetes – you'll usually be offered a calcium channel blocker"
+"shivering
+pale, cold and dry skin – skin and lips may turn blue or grey (on black or brown skin this may be easier to see on the palms of the hands or the soles of the feet)
+slurred speech
+slow breathing
+tiredness or confusion",Hypothermia,"You can get hypothermia if you:
+
+do not wear enough clothes in cold weather
+stay out in the cold too long
+fall into cold water
+have wet clothes and get cold
+live in a cold house – older people living alone are particularly at risk","If you have hypothermia, you’ll usually be treated in hospital.
+
+Your heart rate will be monitored and you may be given oxygen to help you breathe.
+
+You may also be given warm fluids straight into a vein to help your body warm up."
 "a sudden high temperature
 an aching body
 feeling tired or exhausted
@@ -261,6 +528,23 @@ keep warm
 take paracetamol or ibuprofen to lower your temperature and treat aches and pains
 
 drink plenty of water to avoid dehydration (your pee should be light yellow or clear)"
+"ind it hard to go to sleep
+wake up several times during the night
+lie awake at night
+wake up early and cannot go back to sleep
+still feel tired after waking up
+find it hard to nap during the day even though you're tired
+feel tired and irritable during the day
+find it difficult to concentrate during the day because you're tired",Insomnia,"The most common causes are:
+
+stress, anxiety or depression
+noise
+a room that's too hot or cold
+uncomfortable beds
+alcohol, caffeine or nicotine
+recreational drugs like cocaine or ecstasy
+jet lag
+shift work",Insomnia usually gets better by changing your sleeping habits.
 "tiredness
 swollen ankles, feet or hands
 shortness of breath
@@ -279,6 +563,19 @@ blockages in the flow of urine – for example, from kidney stones that keep com
 long-term, regular use of certain medicines – such as lithium and non-steroidal anti-inflammatory drugs (NSAIDs)","Most kidney stones are small enough to be passed in your pee, and it may be possible to treat the symptoms at home with medication.
 
 Larger stones may need to be broken up or removed with surgery."
+"Fatigue, easy bruising, recurrent infections",Leukemia,"Genetic mutations, exposure to certain chemicals"," Chemotherapy, stem cell transplant "
+"feeling very tired and weak all the time
+loss of appetite – which may lead to weight loss
+loss of sex drive (libido)
+yellow skin and whites of the eyes (jaundice)
+itchy skin
+feeling or being sick",Liver Disease, ,"Treatment for liver disease depends on the type you have and how severe it is.
+
+Healthy lifestyle changes can help with some types of liver disease. For example, alcohol-related liver disease may improve if you stop drinking alcohol.
+
+Some types of liver disease (such as certain types of hepatitis) may need to be treated with medicine.
+
+If you have severe liver damage and scarring (cirrhosis), you may need a liver transplant."
 "a cough that does not go away after 3 weeks
 a long-standing cough that gets worse
 chest infections that keep coming back
@@ -289,6 +586,37 @@ persistent tiredness or lack of energy
 loss of appetite or unexplained weight loss",Lung cancer,"Smoking cigarettes is the single biggest risk factor for lung cancer. It's responsible for more than 7 out of 10 cases.
 Radon is a natural radioactive gas that comes from tiny amounts of uranium present in all rocks and soils. It can sometimes be found in buildings.
 Exposure to certain chemicals and substances which are used in several occupations and industries may increase your risk of developing lung cancer.",Radiotherapy uses pulses of radiation to destroy cancer cells. There are a number of ways it can be used to treat lung cancer. There are 3 main types of lung cancer surgery: lobectomy – where 1 of the large parts of the lung (lobes) is removed. Your doctors will suggest this operation if the cancer is just in 1 section of 1 lung. pneumonectomy – where the entire lung is removed. This is used when the cancer is located in the middle of the lung or has spread throughout the lung. wedge resection or segmentectomy – where a small piece of the lung is removed. This procedure is only suitable for a small number of patients. It is only used if your doctors think your cancer is small and limited to one area of the lung. This is usually very early-stage non-small-cell lung cancer. Chemotherapy uses powerful cancer-killing medicine to treat cancer. Immunotherapy is a group of medicines that stimulate your immune system to target and kill cancer cells. It can be used on its own or combined with chemotherapy. Targeted therapies (also known as biological therapies) are medicines designed to slow the spread of advanced non-small cell lung cancer.
+"a high temperature, sweats and chills
+headaches and feeling confused
+feeling very tired and sleepy (especially in children)
+feeling and being sick, tummy pain and diarrhoea
+loss of appetite
+muscle pains
+yellow skin or whites of the eyes
+a sore throat, cough and difficulty breathing",Malaria,Malaria is a serious infection spread by mosquitoes,"Malaria is an emergency and needs to be treated quickly.
+
+It's treated with antimalarial medicines.
+
+Some people will stay in hospital to have specialist care and treatment.
+
+Malaria can sometimes come back and will need to be treated again if this happens."
+"feeling very tired and yawning a lot
+craving certain foods or feeling thirsty
+changes in your mood
+a stiff neck
+peeing more",Migrane,"Some people find certain triggers can cause migraines, such as:
+
+starting their period
+anxiety and depression
+stress and tiredness
+not eating regularly or skipping meals
+too much caffeine
+not getting enough exercise","Migraine treatments include:
+
+painkillers such as ibuprofen and paracetamol
+medicines called triptans
+medicines that stop you feeling sick or being sick
+You may have to try a combination of medicines before you find something that works."
 "Vaginal Bleeding
 abdominal cramp or pelvic cramp
 menstrual cramps.
@@ -305,6 +633,15 @@ Your doctor may prescribe medication to help your body expel the pregnancy tissu
 If you've experienced multiple miscarriages or have other risk factors, your doctor may recommend further testing to identify any underlying causes and develop a plan for future pregnancies.
 If the miscarriage is incomplete or if there are complications, a surgical procedure known as a dilation and curettage (D&C) may be performed.
 Coping with a miscarriage can be emotionally challenging. It's essential to seek emotional support from loved ones, support groups, or mental health professionals."
+"a cough – you may cough up yellow or green mucus (phlegm)
+shortness of breath
+a high temperature
+chest pain
+an aching body
+feeling very tired
+loss of appetite
+making wheezing noises when you breathe – babies may also make grunting noises
+feeling confused – this is common in older people",Pneumonia,Pneumonia is usually caused by a bacterial or viral infection.,You'll usually be given antibiotics to treat pneumonia. Most people get better in 2 to 4 weeks.
 "needing to pee more frequently, often during the night
 needing to rush to the toilet
 difficulty in starting to pee (hesitancy)
@@ -326,6 +663,52 @@ HIFU is sometimes used to treat localised prostate cancer that has not spread be
 Cryotherapy is a method of killing cancer cells by freezing them. It's sometimes used to treat localised prostate cancer that has not spread beyond the prostate gland.
 Chemotherapy is often used to treat prostate cancer that's spread to other parts of the body (metastatic prostate cancer).
 Steroid tablets are used when hormone therapy no longer works because the cancer is resistant to it. This is called castration-resistant prostate cancer (CRPC)."
+"feeling very tired and weak all the time
+feeling irritable and sad all the time
+joint, muscle or leg pain
+swollen, bleeding gums (sometimes teeth can fall out)
+developing red or blue spots on the skin, usually on the legs and feet, although this may be less noticeable on brown or black skin
+skin that bruises easily",Scurvy,"Scurvy is caused by not having enough vitamin C in your diet over a long period of time. Vitamin C is mainly found in fruit and vegetables.
+
+However, even people who do not eat very healthily all the time are not usually considered at risk of scurvy.","It's important that scurvy is treated quickly. Without treatment, scurvy can cause serious problems and may even be life-threatening.
+
+Mild cases of scurvy are often easily treated by adding some vitamin C to your diet, such as from fresh fruit and vegetables."
+Burning stomach pain,Stomach Ulcer,"
+H. pylori Infection:
+Bacterial infection weakens stomach lining.
+
+NSAIDs:
+Long-term use of aspirin, ibuprofen, etc., irritates stomach.
+
+Excessive Acid, Smoking, Alcohol:
+Increase ulcer risk and hinder healing.","Antibiotics:
+For H. pylori infection.
+
+Acid-Reducing Medications:
+PPIs and H2 blockers promote healing.
+
+Antacids:
+Provide temporary relief by neutralizing acid.
+
+Lifestyle Changes:
+Quit smoking, limit alcohol, manage stress."
+"a cough that lasts more than 3 weeks – you may cough up mucus (phlegm) or mucus with blood in it
+feeling tired or exhausted
+a high temperature or night sweats
+loss of appetite
+weight loss
+feeling generally unwell
+",Tuberculosis,"Tuberculosis (TB) is caused by bacteria. It can spread through close contact with people who have TB and have symptoms (active TB).
+
+When someone with active TB coughs, they release small droplets containing the bacteria. You can catch TB if you regularly breathe in these droplets over a long period of time.
+
+Some people have TB in their body but do not get ill or have any symptoms (latent TB). This type of TB cannot be spread to others, but it can turn into active TB in the future.","The main treatment for tuberculosis (TB) is to take antibiotics for at least 6 months.
+
+If TB has spread to your brain, spinal cord or the area around your heart, you may also need to take steroid medicine for a few weeks.
+
+If you have TB but do not have symptoms (latent TB) you usually need to take antibiotics for 3 to 6 months.
+
+There is a vaccine for tuberculosis (TB) called the BCG vaccine."
 "peeing more than usual, particularly at night
 feeling thirsty all the time
 feeling very tired
@@ -343,156 +726,29 @@ sexual problems – like problems getting or keeping an erection","Controlling y
 Medications (e.g., metformin), diet control, exercise
 Metformin is the most common medicine for type 2 diabetes. It can help keep your blood sugar at a healthy level.
 You'll need insulin if other medicines no longer work well enough to keep your blood sugar within a healthy range."
-"a high temperature or shivering (chills) – a high temperature means you feel hot to touch on your chest or back (you do not need to measure your temperature)
-a new, continuous cough – this means coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours
-a loss or change to your sense of smell or taste
-shortness of breath
-feeling tired or exhausted
-an aching body
-a headache
-a sore throat
-a blocked or runny nose
-loss of appetite
-diarrhoea
-feeling sick or being sick",COVID-19,"COVID-19 spreads very easily through close contact with people who have the virus.
+"eye pain – usually a dull ache in or around your eye, which may be worse when focusing
+eye redness
+sensitivity to light (photophobia)
+blurred or cloudy vision
+small shapes moving across your field of vision (floaters)
+loss of the ability to see objects at the side of your field of vision (peripheral vision)",Uveitis,"Many cases of uveitis are linked to a problem with the immune system (the body's defence against illness and infection). For unknown reasons, the immune system can become overactive in the eye.
 
-When someone with COVID-19 breathes, speaks, coughs or sneezes, they release small droplets containing the virus. You can catch it by breathing in these droplets or touching surfaces covered in them.
-You can still catch or spread COVID-19 if you:
+Less often, uveitis can be caused by an infection or an eye injury, and it can also happen after eye surgery.",Steroid medicine is the main treatment for uveitis. It can help reduce inflammation inside your eye.
+"Arthritis, or joint pain.
+Back pain.
+Neck pain.
+Cancer pain near a tumor.
+Headaches, including migraines.
+Testicular pain (orchialgia).
+Lasting pain in scar tissue.
+Muscle pain all over (such as with fibromyalgia).",Chronic pain,"Sometimes chronic pain has an obvious cause. You may have a long-lasting illness such as arthritis or cancer that can cause ongoing pain.
 
-do not have symptoms
-are fully vaccinated
-have had the virus before","Nirmatrelvir plus ritonavir, remdesivir and molnupiravir are antiviral medicines.
+Injuries and diseases can also cause changes to your body that leave you more sensitive to pain. These changes can stay in place even after you’ve healed from the original injury or disease. Something like a sprain, a broken bone or a brief infection can leave you with chronic pain.","To relieve chronic pain, healthcare providers first try to identify and treat the cause. But sometimes they can’t find the source. If so, they turn to treating, or managing, the pain.
 
-When being assessed for treatment, a doctor will advise which treatment is most suitable for you."
-"pain and stiffness in your joints
-joint tenderness
-increased pain and stiffness when you have not moved your joints for a while
-joints appearing slightly larger or more ""knobbly"" than usual
-a grating or crackling sound or sensation in your joints
-limited range of movement in your joints
-weakness and muscle wasting (loss of muscle bulk)",Osteoarthritis,"joint injury – overusing your joint when it has not had enough time to heal after an injury or operation
-other conditions (secondary arthritis) – osteoarthritis can happen in joints severely damaged by a previous or existing condition, such as rheumatoid arthritis or gout
-age – your risk of developing the condition increases as you get older
-family history – osteoarthritis may run in families, although studies have not identified a single gene responsible
-obesity – being obese puts excess strain on your joints, particularly those that bear most of your weight, such as your knees and hips
-being a woman – osteoarthritis is more common in women than men","The main treatments for the symptoms of osteoarthritis include:
+Healthcare providers treat chronic pain in many different ways. The approach depends on many factors, including:
 
-lifestyle measures – such as maintaining a healthy weight and exercising regularly
-medication – to relieve your pain
-supportive therapies – to help make everyday activities easier
-Exercise
-Losing weight
-Pain relief medicines
-Paracetamol
-Non-steroidal anti-inflammatory drugs (NSAIDs)
-Opioids, such as codeine, are another type of painkiller that may help relieve severe pain.
-Steroid injections
-Capsaicin cream
-Complementary and alternative therapies
-Supportive treatments
-Hot or cold packs
-Assistive devices
-Manual therapy
-Surgery
-Joint replacement
-Joint fusing
-Adding or removing some bone around a joint
-Complementary and alternative therapies
-Nutritional supplements
-Rubefacients"
-"feeling very tired and yawning a lot
-craving certain foods or feeling thirsty
-changes in your mood
-a stiff neck
-peeing more",Migrane,"Some people find certain triggers can cause migraines, such as:
-
-starting their period
-anxiety and depression
-stress and tiredness
-not eating regularly or skipping meals
-too much caffeine
-not getting enough exercise","Migraine treatments include:
-
-painkillers such as ibuprofen and paracetamol
-medicines called triptans
-medicines that stop you feeling sick or being sick
-You may have to try a combination of medicines before you find something that works."
-"a cough that lasts more than 3 weeks cough 
-up mucus
-mucus with blood in it
-feeling tired or exhausted
-a high temperature or night sweats
-loss of appetite
-weight loss
-feeling generally unwell",Tuberculosis,"spend a lot of time with someone who has active TB, such as people living in the same house
-were born in or lived in an area where TB is more common
-have a weakened immune system, such as people with HIV, a kidney transplant or who are having certain treatment like chemotherapy
-are under 5 years of age
-live in overcrowded or unhealthy conditions, such as people who are homeless
-regularly smoke, drink alcohol or take drugs
-have had TB before and it was not treated properly","The main treatment for tuberculosis (TB) is to take antibiotics for at least 6 months.
-
-If TB has spread to your brain, spinal cord or the area around your heart, you may also need to take steroid medicine for a few weeks.
-
-If you have TB but do not have symptoms (latent TB) you usually need to take antibiotics for 3 to 6 months.
-
-There is a vaccine for tuberculosis (TB) called the BCG vaccine."
-"weight loss and poor appetite
-swollen ankles, feet or hands – as a result of water retention (oedema)
-shortness of breath
-tiredness
-blood in your pee (urine)
-an increased need to pee – particularly at night
-difficulty sleeping (insomnia)
-itchy skin
-muscle cramps
-feeling sick
-headaches
-erectile dysfunction in men",Chronic Kidney Disease(CKD),"high blood pressure
-diabetes
-high cholesterol
-kidney infections
-glomerulonephritis – kidney inflammation
-autosomal dominant polycystic kidney disease
-blockages in the flow of urine 
-long-term, regular use of certain medicines ","The main treatments are:
-
-lifestyle changes to help you remain as healthy as possible
-medicine to control associated problems such as high blood pressure and high cholesterol
-dialysis – treatment to replicate some of the kidney's functions; this may be necessary in advanced CKD
-kidney transplant – this may also be necessary in advanced CKD"
-"Fatigue, weakness, pale skin",Anemia,"Iron deficiency, vitamin B12 deficiency","Iron supplements, blood transfusions"
-"Fatigue, easy bruising, recurrent infections",Leukemia,"Genetic mutations, exposure to certain chemicals"," Chemotherapy, stem cell transplant "
-"feeling sick 
-vomiting
-indigestion
-a high temperature of 38C
-more fever
-yellowing of the whites of the eyes
-yellowing of the skin
-tenderness or swelling of the tummy
-fast heartbeat 
-tachycardia
-rapid breathing",Acute pancreatitis,"Acute pancreatitis is usually caused by gallstones or drinking too much alcohol
-You're probably more likely to develop severe pancreatitis if you:
-
-are over 70
-are obese (you have a body mass index (BMI) of 30 or above)
-have 2 or more alcoholic drinks a day
-smoke
-have a family history of pancreatitis
-Less common causes of acute pancreatitis include:
-
-high blood fat levels (hypertriglyceridaemia)
-accidental damage or injury to the pancreas – for example, during a procedure to remove gallstones or examine the pancreas
-a side effect of medicine
-viruses like mumps or measles
-high blood calcium levels (hypercalcaemia)
-the immune system attacking the pancreas (autoimmune pancreatitis)","Acute pancreatitis is treated in hospital,
- where you'll be closely monitored for signs of serious problems and given supportive treatment,
- such as fluids and oxygen.
-Fluids
-Oxygen
-Painkillers
-Antibiotics
-Nutritional support"
+The type of pain you have.
+The cause of your pain, if known.
+Your age and overall health.
+The best treatment plans use a variety of strategies, including medications, lifestyle changes and therapies."
+slightly burning pain in stomach,Severe pain, , 
