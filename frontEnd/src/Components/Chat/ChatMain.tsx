@@ -7,7 +7,7 @@ import sendBtn from "/send.svg";
 import Cookies from "js-cookie";
 import { useNavigate } from "react-router-dom";
 
-const Chat = () => {
+const ChatContainer = () => {
   const [typedText, setTypeText] = useState("");
   const [messages, setMessages] = useState<{ text: string; isBot: boolean }[]>(
     []
@@ -49,21 +49,30 @@ const Chat = () => {
         selectedConversation,
       })
       .then((res) => {
-        console.log(res);
-        const responseTypes = ["disease", "causes", "treatment"];
-
-        responseTypes.forEach((type) => {
-          let botResponse = res.data[type];
-          if (botResponse == "") {
-            return;
-          }
+        console.log(res.data.user_msg);
+        if (res.data.user_msg === "no match") {
+          let botResponse = res.data.answer;
           let botMessage = {
             text: botResponse,
             isBot: true,
           };
-
           setMessages((prevMessages) => [...prevMessages, botMessage]);
-        });
+        } else {
+          const responseTypes = ["disease", "causes", "treatment"];
+
+          responseTypes.forEach((type) => {
+            let botResponse = res.data[type];
+            if (botResponse == "") {
+              return;
+            }
+            let botMessage = {
+              text: botResponse,
+              isBot: true,
+            };
+
+            setMessages((prevMessages) => [...prevMessages, botMessage]);
+          });
+        }
       })
       .catch((err) => {
         console.log("Message sent failed : ", err);
@@ -138,4 +147,4 @@ const Chat = () => {
   );
 };
 
-export default Chat;
+export default ChatContainer;

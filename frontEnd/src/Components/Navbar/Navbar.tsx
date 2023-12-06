@@ -1,25 +1,26 @@
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <ul className="flex items-start justify-center mx-auto text-center text-xl navBar p-2 rounded-lg">
       <li className="list-none inline-block px-5">
-        <a href="#" className="no-underline text-white px-2">
+        <Link to="/" className="no-underline text-white px-2">
           Home
-        </a>
+        </Link>
       </li>
       <li className="list-none inline-block px-5">
-        <a href="#" className="no-underline text-white px-2">
+        <Link to="/chat" className="no-underline text-white px-2">
           Chat
-        </a>
+        </Link>
       </li>
       <li className="list-none inline-block px-5">
-        <a href="#" className="no-underline text-white px-2">
+        <Link to="/about" className="no-underline text-white px-2">
           About
-        </a>
+        </Link>
       </li>
       <li className="list-none inline-block px-5">
-        <a href="#" className="no-underline text-white px-2">
+        <Link to="/contact" className="no-underline text-white px-2">
           Contact
-        </a>
+        </Link>
       </li>
     </ul>
   );

@@ -38,7 +38,7 @@ def clean_txt(text):
 
 
 def preprocess_input(user_input):
-    user_token = nlp(user_input)
+    user_token = nlp(user_input.lower())
 
     filtered_token = []
 
@@ -67,11 +67,17 @@ def generate_response(user_input, df):
     user_input_vector = tfidf_vectorizer.transform([user_input])
 
     similarities = cosine_similarity(user_input_vector, tfidf_matrix)
+    score = similarities[0]
+
     max_similarity_index = similarities.argmax()
+    max_score = score[max_similarity_index]
 
-    response = max_similarity_index
+    threshold = 0.2
 
-    return response
+    if max_score < threshold:
+        return -1
+    else:
+        return max_similarity_index
 
 # User Authentication
 
@@ -146,33 +152,47 @@ def send_msg():
     mysql.connection.commit()
 
     match_idx = generate_response(user_msg, df)
-    disease = "Predicted Disease : " + df.iloc[match_idx]['Disease']
+    print(match_idx)
 
-    cur.execute("INSERT INTO conversation (user_id, msg, isbot, conv_index) VALUES (%s, %s, %s, %s)",
-                (user_id, disease, 1, conv_idx))
-    mysql.connection.commit()
+    if match_idx == -1:
+        botReply = """Sorry, your given symptoms aren't enough for disease prediction.
+Please, provide your symptoms in detail for better detection!!!
 
-    causes = "Causes of this disease: \n\n" + \
-        df.iloc[match_idx]['Causes'] if df.iloc[match_idx]['Causes'] != " " else ""
+Thank You.
+"""
+        cur.execute("INSERT INTO conversation (user_id, msg, isbot, conv_index) VALUES (%s, %s, %s, %s)",
+                    (user_id, botReply, 1, conv_idx))
+        mysql.connection.commit()
+        cur.close()
+        return jsonify({'user_msg': 'no match', 'answer': botReply})
+    else:
+        disease = "Predicted Disease : " + df.iloc[match_idx]['Disease']
 
-    cur.execute("INSERT INTO conversation (user_id, msg, isbot, conv_index) VALUES (%s, %s, %s, %s)",
-                (user_id, causes, 1, conv_idx))
-    mysql.connection.commit()
+        cur.execute("INSERT INTO conversation (user_id, msg, isbot, conv_index) VALUES (%s, %s, %s, %s)",
+                    (user_id, disease, 1, conv_idx))
+        mysql.connection.commit()
 
-    treatment = "Suggested treatments : \n\n" + \
-        df.iloc[match_idx]['Treatment'] if df.iloc[match_idx]['Treatment'] != " " else ""
+        causes = "Causes of this disease: \n\n" + \
+            df.iloc[match_idx]['Causes'] if df.iloc[match_idx]['Causes'] != " " else ""
 
-    cur.execute("INSERT INTO conversation (user_id, msg, isbot, conv_index) VALUES (%s, %s, %s, %s)",
-                (user_id, treatment, 1, conv_idx))
-    mysql.connection.commit()
+        cur.execute("INSERT INTO conversation (user_id, msg, isbot, conv_index) VALUES (%s, %s, %s, %s)",
+                    (user_id, causes, 1, conv_idx))
+        mysql.connection.commit()
 
-    cur.close()
+        treatment = "Suggested treatments : \n\n" + \
+            df.iloc[match_idx]['Treatment'] if df.iloc[match_idx]['Treatment'] != " " else ""
 
-    print(disease)
-    print(causes)
-    print(treatment)
+        cur.execute("INSERT INTO conversation (user_id, msg, isbot, conv_index) VALUES (%s, %s, %s, %s)",
+                    (user_id, treatment, 1, conv_idx))
+        mysql.connection.commit()
 
-    return jsonify({'user_msg': 'message sent', 'disease': disease, 'causes': causes, 'treatment': treatment})
+        cur.close()
+
+        print(disease)
+        print(causes)
+        print(treatment)
+
+        return jsonify({'user_msg': 'message sent', 'disease': disease, 'causes': causes, 'treatment': treatment})
 
 
 @app.route('/get_messages', methods=['GET'])

@@ -47,7 +47,7 @@ const Login = () => {
   };
 
   return (
-    <div className="flex flex-col mt-4">
+    <div className="flex flex-col pt-4">
       <Navbar />
       <div className="h-screen p-40 px-72">
         <div className="loginContainer border-2 border-gray-700 shadow-2xl flex flex-col xl:flex-row justify-stretch items-start">
@@ -57,7 +57,7 @@ const Login = () => {
           <div className="formpart md:w-8/12">
             <form className="form" action="" onSubmit={handleSubmit}>
               <div className="control">
-                <h1 className="text-2xl mb-12">Sign In</h1>
+                <h1 className="text-2xl mb-12 text-white">Sign In</h1>
               </div>
               <div className="control block-cube block-input">
                 <input
@@ -116,7 +116,7 @@ const Login = () => {
                 )}
               </div>
               <div className="text-center">
-                <Link className="text-lg" to="/register">
+                <Link className="text-lg text-white" to="/register">
                   Don't have an account?{" "}
                   <span className="font-semibold">Register</span>
                 </Link>
